@@ -6,6 +6,6 @@ class FlashcardsController < ApplicationController
     url = "http://kiei925.herokuapp.com/students.json?access_token=broncos"
     raw_data = open(url).read
     @parsed_data = JSON.parse(raw_data)
-    @students = @parsed_data[]
+    @students = @parsed_data.take(29)
   end
 end

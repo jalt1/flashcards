@@ -1,9 +1,9 @@
-<% @students.each do %>
+<% @students.each do |student|%>
 
 <ul>
   <li>
-    <img width='200' src='<%= @students["image_url"] %>'>
-    <h3><%= @students["first_name"]%></h3>
+    <img width='200' src='<%= student["image_url"] %>'>
+    <h3><%= student["first_name"]%></h3>
   </li>
 <!--   <li>
     <img width='200' src='https://www.kellogg.northwestern.edu/images/students/all/x410579.jpg'>
